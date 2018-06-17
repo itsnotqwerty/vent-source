@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dn_white2_background" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bluedot" android:background="@drawable/groups_blue_dot" android:layout_width="@dimen/groups_blue_dot_size_half" android:layout_height="@dimen/groups_blue_dot_size" />
+    <com.vent.CachedImageView android:id="@id/pic" android:layout_width="@dimen/itmuserpic_medium" android:layout_height="@dimen/itmuserpic_medium" android:layout_marginLeft="12.0dip" android:scaleType="centerCrop" />
+    <TableLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:shrinkColumns="0" android:layout_weight="1.0">
+        <TableRow android:gravity="center_vertical">
+            <TextView android:textSize="16.0dip" android:textColor="@color/dn_black_text" android:ellipsize="none" android:id="@id/name" android:layout_width="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/dn_grey55_text" android:id="@id/role" android:background="@drawable/role_frame" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_marginLeft="8.0dip" android:maxLines="1" android:minLines="1" android:textAllCaps="true" />
+        </TableRow>
+        <TextView android:ellipsize="end" android:id="@id/membets_and_vents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:minLines="1" />
+    </TableLayout>
+    <ImageView android:id="@id/muted" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:src="@drawable/icon_mute" />
+    <ImageView android:id="@id/listen" android:paddingLeft="0.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="atlas_dn_black">#ffffffff</color>
+    <color name="atlas_dn_white">#ff000000</color>
+    <color name="atlas_view_divider">#ff333333</color>
+    <color name="dn_black_background">#ffffffff</color>
+    <color name="dn_black_text">#ffffffff</color>
+    <color name="dn_chat_theirBubbleColor">#ff333333</color>
+    <color name="dn_chat_theirTextColor">#ffffffff</color>
+    <color name="dn_dialog_background">#ff303030</color>
+    <color name="dn_divider">#ff505050</color>
+    <color name="dn_grey55_text">#ffaaaaaa</color>
+    <color name="dn_greyaa_text">#ff555555</color>
+    <color name="dn_greybb_text">#ff444444</color>
+    <color name="dn_group_img_placeholder">#ff404040</color>
+    <color name="dn_pad2">#20000000</color>
+    <color name="dn_username_background_pressed">#ff141414</color>
+    <color name="dn_white2_background">#ff1a1a1a</color>
+    <color name="dn_white_background">#ff000000</color>
+    <color name="dn_white_text">#ff000000</color>
+    <color name="dn_windowBackground">#ff0d0d0d</color>
+    <color name="myColorAccent">#ffffffff</color>
+    <color name="myColorPrimary">#ffffffff</color>
+</resources>

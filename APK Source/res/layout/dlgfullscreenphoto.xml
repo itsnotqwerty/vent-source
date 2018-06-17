@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@id/fullscreenimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.vent.CachedImageView android:id="@id/fallback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <TextView android:textColor="#ffffffff" android:gravity="left" android:id="@id/addr" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

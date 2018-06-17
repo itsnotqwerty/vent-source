@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@color/dn_windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/dn_white2_background" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.vent.CachedImageView android:id="@id/profile_image" android:layout_width="@dimen/itmuserpic_large" android:layout_height="@dimen/itmuserpic_large" android:layout_marginTop="16.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/profile_image_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/triangle" android:layout_alignRight="@id/profile_image" android:layout_alignBottom="@id/profile_image" />
+                <TextView android:id="@id/text_pub_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:text="@string/PublicInformation" android:layout_toLeftOf="@id/profile_image" android:layout_alignParentLeft="true" style="@style/edit_group_header" />
+                <android.support.design.widget.TextInputLayout android:id="@id/username_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/profile_image" android:layout_below="@id/text_pub_info" android:layout_alignParentLeft="true" app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+                    <android.support.design.widget.TextInputEditText android:id="@id/username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/Username" android:inputType="textNoSuggestions" android:imeOptions="actionNext|flagNoExtractUi" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <com.vent.views.MyMultiAutoCompleteTextView android:textSize="16.0dip" android:gravity="center|top" android:id="@id/bio" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:hint="@string/Bio" android:minLines="4" android:inputType="textCapSentences|textMultiLine" android:dropDownAnchor="@id/username_error" android:imeOptions="flagNoExtractUi" />
+            <TextView android:layout_marginTop="20.0dip" android:text="@string/PrivateInformation" style="@style/edit_group_header" />
+            <Button android:id="@id/changepassword" android:layout_marginTop="4.0dip" android:text="@string/ChangePassword" style="@style/edit_profile_button" />
+            <Button android:id="@id/changeemail" android:text="@string/ChangeEmailAddress" style="@style/edit_profile_button" />
+            <Button android:id="@id/priv_new" android:text="@string/AccountPrivacy" style="@style/edit_profile_button" />
+            <Button android:id="@id/blockedusers" android:text="@string/BlockedUsers" style="@style/edit_profile_button" />
+            <Button android:id="@id/interests" android:text="@string/ChangeInterests" style="@style/edit_profile_button" />
+            <TextView android:textColor="@color/dn_black_text" android:layout_marginTop="20.0dip" android:text="@string/Notifications" style="@style/edit_group_header" />
+            <Button android:id="@id/notifications" android:text="@string/NotificationSettings" style="@style/edit_profile_button" />
+            <TextView android:id="@id/messages_label" android:layout_marginTop="20.0dip" android:text="@string/Messages" style="@style/edit_group_header" />
+            <Button android:textColor="@color/dn_black_text" android:id="@id/messages" android:layout_marginTop="4.0dip" android:text="@string/MessageSettings" style="@style/edit_profile_button" />
+            <LinearLayout android:orientation="vertical" android:id="@id/content_settings" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginTop="20.0dip" android:text="@string/ContentSettings" style="@style/edit_group_header" />
+                <android.support.v7.widget.SwitchCompat android:theme="@style/greenSwitch" android:textColor="@color/dn_black_text" android:id="@id/nsfw_setting" android:layout_marginTop="4.0dip" android:layout_marginRight="24.0dip" android:text="@string/ExplicitContent" style="@style/edit_profile_button" />
+                <TextView android:textSize="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="24.0dip" android:text="@string/nsfw_blurb" />
+            </LinearLayout>
+            <TextView android:layout_marginTop="20.0dip" android:text="@string/Account" style="@style/edit_group_header" />
+            <Button android:id="@id/signout" android:layout_marginTop="4.0dip" android:text="@string/SignOut" style="@style/edit_profile_button" />
+            <Button android:id="@id/deactivate" android:text="@string/DeactivateAccount" style="@style/edit_profile_button" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/dn_black_text" android:gravity="center_vertical" android:id="@id/created_at" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+            <Button android:textSize="18.0sp" android:id="@id/about" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:text="@string/About" android:fontFamily="sans-serif-medium" style="@style/edit_profile_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

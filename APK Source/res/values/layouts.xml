@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="intercom_messenger_activity_layout">@layout/intercom_activity_messenger</item>
+</resources>

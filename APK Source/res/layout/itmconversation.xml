@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layout" android:background="@color/dn_white2_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vent.CachedImageView android:layout_gravity="top" android:id="@id/profile_image" android:layout_width="@dimen/itmuserpic_medium" android:layout_height="@dimen/itmuserpic_medium" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/ic_launcher" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ventbodyfont" android:textColor="@color/dn_black_text" android:ellipsize="end" android:id="@id/username" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/time" android:textColor="@color/dn_grey55_text" android:id="@id/lastmsg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="@color/dn_grey55_text" android:ellipsize="end" android:gravity="top" android:id="@id/lastmsg_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0dip" android:textColor="@color/dn_white_text" android:id="@id/unread_count" android:background="@drawable/count_badge" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:minWidth="16.0dip" android:singleLine="true" android:includeFontPadding="false" />
+            <ImageView android:id="@id/muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/icon_mute" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/mute" android:background="#ffc7c7cc" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/Mute" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/delete" android:background="@color/deleteRed" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/Delete" />
+</LinearLayout>

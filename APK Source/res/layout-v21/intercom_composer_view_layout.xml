@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/composer_upper_border" android:background="@color/intercom_composer_border" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/composer_edit_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_composer_icon_bar_height">
+        <android.support.v7.widget.RecyclerView android:id="@id/composer_input_icons_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/send_button_fading_background" android:background="@color/intercom_composer_white" android:layout_width="@dimen/intercom_composer_send_button_fading_background_width" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/send_button" android:background="@drawable/intercom_composer_send_background" android:paddingLeft="11.0dip" android:paddingRight="8.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/intercom_composer_ic_send" android:layout_alignParentRight="true" android:contentDescription="@string/intercom_composer_send_button_content_description" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" android:elevation="4.0dip" />
+    </RelativeLayout>
+    <View android:id="@id/composer_lower_border" android:background="@color/intercom_composer_border" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <com.intercom.composer.pager.NonSwipeableViewPager android:id="@id/composer_view_pager" android:background="@color/intercom_composer_white" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</merge>

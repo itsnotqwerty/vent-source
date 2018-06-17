@@ -1,0 +1,2 @@
+-- Update stream seq to max known valid event seq
+UPDATE streams SET seq = (SELECT MAX(seq) FROM events WHERE stream_database_identifier = streams.database_identifier) WHERE (SELECT COUNT(*) FROM events WHERE stream_database_identifier = streams.database_identifier AND events.seq IS NOT NULL) > 0;

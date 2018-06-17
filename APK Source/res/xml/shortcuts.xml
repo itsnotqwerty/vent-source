@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/send_icon" android:enabled="true">
+        <intent android:targetPackage="com.vent" android:action="android.intent.action.MAIN" android:targetClass="com.vent.ActMain" /> <intent android:targetPackage="com.vent" android:action="android.intent.action.VIEW" android:targetClass="com.vent.ActEmotions" /> </shortcut>
+    <shortcut android:icon="@drawable/icon_chat" android:enabled="true">
+        <intent android:targetPackage="com.vent" android:action="com.vent.ActMain.CHAT" android:targetClass="com.vent.ActMain" /> <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/demo_activity_icon" android:enabled="true">
+        <intent android:targetPackage="com.vent" android:action="com.vent.ActMain.NOTIFICATIONS" android:targetClass="com.vent.ActMain" /> </shortcut>
+    <shortcut android:icon="@drawable/demo_explore_icon" android:enabled="true">
+        <intent android:targetPackage="com.vent" android:action="android.intent.action.MAIN" android:targetClass="com.vent.ActMain" /> <intent android:targetPackage="com.vent" android:action="android.intent.action.VIEW" android:targetClass="com.vent.ActSearch" /> </shortcut> </shortcuts>

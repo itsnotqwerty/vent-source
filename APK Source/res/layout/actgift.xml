@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@color/dn_white2_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:theme="@style/MyActionBar.Black.Forced" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <TextView android:textColor="@color/dn_black_text" android:id="@id/blurb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" style="@style/TextAppearance.AppCompat.Medium" />
+    <EditText android:gravity="top" android:id="@id/msg" android:background="@null" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:hint="@string/WouldYouLikeToNote" android:minLines="3" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionSend|flagNoExtractUi" />
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+    <android.support.v7.widget.SwitchCompat android:theme="@style/greenSwitch" android:textColor="@color/dn_black_text" android:id="@id/includename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/IncludeMyUsername" />
+</LinearLayout>

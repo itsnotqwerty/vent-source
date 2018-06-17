@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@color/dn_white2_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.layer.atlas.AtlasHistoricMessagesFetchLayout android:id="@id/historic_sync_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.layer.atlas.AtlasMessagesRecyclerView android:id="@id/messages_list" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:myTextColor="#ffffffff" app:theirBubbleColor="@color/dn_chat_theirBubbleColor" app:theirTextColor="@color/dn_chat_theirTextColor" />
+    </com.layer.atlas.AtlasHistoricMessagesFetchLayout>
+    <com.layer.atlas.AtlasMessageComposer android:id="@id/message_composer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:inputTextColor="@color/dn_black_text" />
+</LinearLayout>

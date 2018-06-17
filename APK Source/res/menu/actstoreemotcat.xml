@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_help" android:id="@id/help" android:title="@string/Help" app:showAsAction="always" />
+    <item android:icon="@drawable/icon_hidden_large" android:id="@id/show" android:title="@string/Show" app:showAsAction="always" />
+    <item android:icon="@drawable/icon_visible_large" android:id="@id/hide" android:title="@string/Hide" app:showAsAction="always" />
+</menu>

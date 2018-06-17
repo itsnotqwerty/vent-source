@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/launcher_root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="61.0dip" android:layout_height="@dimen/intercom_launcher_height" android:layout_marginRight="@dimen/intercom_launcher_padding_right" android:layout_marginBottom="@dimen/intercom_launcher_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom|center|left" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/intercom_launcher_height" android:layout_height="@dimen/intercom_launcher_height">
+        <View android:layout_gravity="center" android:background="@drawable/intercom_circular_shadow" android:layout_width="72.0dip" android:layout_height="80.0dip" android:layout_marginTop="4.0dip" android:alpha="0.8" />
+        <ImageButton android:layout_gravity="top" android:id="@id/launcher_icon" android:background="@drawable/intercom_solid_circle" android:paddingTop="2.0dip" android:visibility="visible" android:clickable="false" android:layout_width="@dimen/intercom_launcher_height" android:layout_height="@dimen/intercom_launcher_height" android:src="@drawable/intercom_launcher_icon" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/intercom_white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/launcher_badge_count" android:background="@drawable/intercom_solid_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+</FrameLayout>

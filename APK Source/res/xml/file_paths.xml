@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="external_dcim_vent" path="DCIM/Vent" />
+    <cache-path name="internal_cache_gallerytemp" path="GalleryTemp" />
+    <external-cache-path name="external_cache_gallerytemp" path="GalleryTemp" />
+</paths>

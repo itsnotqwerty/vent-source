@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.intercom.android.sdk.views.IntercomErrorView android:id="@id/error_layout_inbox" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.intercom.android.sdk.inbox.InboxEmptyRowsView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/intercom_empty_state_fade" android:layout_width="fill_parent" android:layout_height="350.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/intercom_grey_700" android:gravity="center" android:id="@id/empty_text_subtitle" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/intercom_error_state_title" android:gravity="center" android:id="@id/empty_text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:includeFontPadding="false" android:layout_above="@id/empty_text_subtitle" />
+    <Button android:id="@id/action_button" android:background="@color/intercom_full_transparent_full_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/empty_text_subtitle" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+</io.intercom.android.sdk.views.IntercomErrorView>

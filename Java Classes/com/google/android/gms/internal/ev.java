@@ -1,0 +1,26 @@
+package com.google.android.gms.internal;
+
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.api.internal.ch;
+
+final class ev
+  extends fa
+{
+  private final ch<Status> aPX;
+  
+  public ev(ch<Status> paramch)
+  {
+    this.aPX = paramch;
+  }
+  
+  public final void a(ew paramew)
+  {
+    this.aPX.N(paramew.aCx);
+  }
+}
+
+
+/* Location:              /home/qerwtr546/Documents/Vent Source/dex2jar-2.0/classes-dex2jar.jar!/com/google/android/gms/internal/ev.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

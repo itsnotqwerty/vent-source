@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/chathead_root" android:paddingRight="@dimen/intercom_chat_overlay_padding_right" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/intercom_chat_overlay_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/chat_full_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/chathead_text_container" android:background="@drawable/intercom_chat_bubble" android:paddingLeft="@dimen/intercom_chat_overlay_text_padding_left" android:paddingRight="@dimen/intercom_chat_overlay_text_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/intercom_chat_overlay_text_margin_left" android:layout_marginBottom="@dimen/intercom_chat_bubble_bottom_margin">
+            <TextView android:textSize="15.0sp" android:textColor="@color/intercom_grey_800" android:ellipsize="end" android:id="@id/chathead_text_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@id/chat_overlay_overflow_fade" android:background="@drawable/intercom_part_fade_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="76.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="44.0dip" android:alpha="0.7" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/chat_avatar_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/intercom_preview_chathead_avatar_diameter" android:layout_height="@dimen/intercom_preview_chathead_avatar_diameter" android:layout_marginBottom="@dimen/intercom_chat_head_bottom_margin">
+        <View android:layout_gravity="center" android:background="@drawable/intercom_circular_shadow" android:layout_width="72.0dip" android:layout_height="80.0dip" android:layout_marginTop="4.0dip" android:alpha="0.8" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/chathead_avatar" android:layout_width="@dimen/intercom_preview_chathead_avatar_diameter" android:layout_height="@dimen/intercom_preview_chathead_avatar_diameter" />
+    </FrameLayout>
+</FrameLayout>

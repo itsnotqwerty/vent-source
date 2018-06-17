@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/editprofile" android:title="@string/EditProfile" app:showAsAction="always" />
+    <item android:id="@id/webprofile" android:title="@string/WebProfile" app:showAsAction="always" />
+    <item android:id="@id/subscribe" android:title="@string/Subscribe" app:showAsAction="always" />
+    <item android:id="@id/unsubscribe" android:title="@string/Unsubscribe" app:showAsAction="always" />
+    <item android:id="@id/block" android:title="@string/Block" app:showAsAction="always" />
+    <item android:id="@id/unblock" android:title="@string/Unblock" app:showAsAction="always" />
+    <item android:id="@id/report" android:title="@string/Report" app:showAsAction="always" />
+    <item android:id="@id/mute" android:title="@string/Mute" app:showAsAction="always" />
+    <item android:id="@id/unmute" android:title="@string/Unmute" app:showAsAction="always" />
+    <item android:id="@id/datejump" android:title="@string/DateJump" app:showAsAction="always" />
+    <item android:id="@id/settings" android:title="@string/Settings" app:showAsAction="always" />
+    <item android:id="@id/swapuser" android:title="@string/SwitchUser" app:showAsAction="always" />
+    <item android:id="@id/removeAds" android:title="@string/RemoveAds_img" app:showAsAction="always" />
+    <item android:id="@id/emotionstore" android:title="@string/EmotionStore_img" app:showAsAction="always" />
+</menu>

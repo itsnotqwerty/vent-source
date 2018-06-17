@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/conversation_fragment_root" android:background="@color/intercom_white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wallpaper" android:background="@color/intercom_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/composer_holder" android:layout_alignParentTop="true" layout="@layout/intercom_conversation_coordinator" />
+    <TextView android:textColor="@color/intercom_white" android:gravity="center" android:id="@id/pill" android:background="@drawable/intercom_rounded_toast" android:paddingLeft="24.0dip" android:paddingTop="6.0dip" android:paddingRight="24.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/intercom_new_message" android:layout_above="@id/composer_holder" android:layout_centerHorizontal="true" />
+    <include android:id="@id/composer_holder" layout="@layout/intercom_composer_holder" />
+    <View android:id="@id/composer_holder_shadow" android:background="@drawable/intercom_bottom_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_composer_shadow_height" android:layout_above="@id/composer_holder" android:alpha="0.9" />
+    <io.intercom.android.sdk.views.IntercomToolbar android:id="@id/intercom_toolbar" style="@style/intercom_toolbar_style" />
+</RelativeLayout>

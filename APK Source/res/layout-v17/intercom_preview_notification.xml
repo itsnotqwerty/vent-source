@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/notification_root" android:background="@drawable/intercom_rounded_rect" android:visibility="invisible" android:layout_width="328.0dip" android:layout_height="@dimen/intercom_notification_preview_height" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/preview_avatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginStart="20.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginStart="16.0dip">
+        <TextView android:textSize="15.0sp" android:ellipsize="end" android:id="@id/preview_name" android:layout_width="220.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/intercom_grey_700" android:ellipsize="end" android:id="@id/preview_summary" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/mute" android:title="@string/Mute" app:showAsAction="always" />
+    <item android:id="@id/unmute" android:title="@string/Unmute" app:showAsAction="always" />
+    <item android:id="@id/report" android:title="@string/Report" app:showAsAction="always" />
+    <item android:id="@id/edit" android:title="@string/Edit" app:showAsAction="always" />
+    <item android:id="@id/datejump" android:title="@string/DateJump" app:showAsAction="always" />
+</menu>

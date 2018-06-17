@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/composer_container" android:background="@color/intercom_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <io.intercom.android.sdk.conversation.ReactionInputView android:id="@id/reaction_input_view" android:background="@color/intercom_white" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_composer_height" />
+    <View android:id="@id/disabled_view" android:background="@color/intercom_transparent_white" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignTop="@id/composer_container" android:layout_alignBottom="@id/composer_container" />
+</RelativeLayout>

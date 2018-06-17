@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.layer.atlas.AtlasAvatar android:id="@id/avatar" android:layout_width="@dimen/atlas_chip_height" android:layout_height="@dimen/atlas_chip_height" />
+    <TextView android:textSize="@dimen/atlas_text_size_chip" android:textColor="@color/atlas_text_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/atlas_padding_narrow" android:text="[name]" />
+    <ImageView android:id="@id/remove" android:layout_width="@dimen/atlas_chip_height" android:layout_height="@dimen/atlas_chip_height" android:src="@drawable/ic_cancel_white_24dp" android:scaleType="center" android:tint="@color/atlas_icon_enabled" />
+</merge>

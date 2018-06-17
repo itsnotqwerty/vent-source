@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@color/dn_windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@style/MyActionBar.White" android:id="@id/toolbar" android:background="@color/dn_white2_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/dn_white2_background" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.vent.CachedImageView android:id="@id/profile_image" android:layout_width="fill_parent" android:layout_height="@dimen/group_banner_h" android:scaleType="centerCrop" />
+                <TextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/profile_image_edit" android:background="#80ffffff" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/AddBackground" />
+            </FrameLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/groupname_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+                <android.support.design.widget.TextInputEditText android:id="@id/groupname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/GroupName" android:inputType="textNoSuggestions" android:imeOptions="actionNext|flagNoExtractUi" />
+            </android.support.design.widget.TextInputLayout>
+            <com.vent.views.MyMultiAutoCompleteTextView android:textSize="16.0dip" android:gravity="center|top" android:id="@id/groupbio" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:hint="@string/GroupBio" android:minLines="4" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionNext|flagNoExtractUi" />
+            <Button android:textColor="@color/dn_black_text" android:gravity="center|left" android:id="@id/interests" android:background="@null" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/ChangeInterests" />
+            <Button android:textColor="@color/dn_black_text" android:gravity="center|left" android:id="@id/delete" android:background="@null" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:text="@string/DeleteGroup" />
+            <android.support.v7.widget.SwitchCompat android:theme="@style/greenSwitch" android:textSize="16.0dip" android:textColor="@color/dn_black_text" android:gravity="center|left" android:id="@id/nsfw_setting" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/ExplicitContent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

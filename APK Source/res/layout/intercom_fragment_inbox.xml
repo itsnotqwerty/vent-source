@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/conversations_list_root" android:background="@color/intercom_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.intercom.android.sdk.views.IntercomToolbar android:id="@id/intercom_toolbar" style="@style/intercom_toolbar_style" />
+    <FrameLayout android:paddingTop="@dimen/intercom_toolbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="gone" layout="@layout/intercom_error_inbox" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercom_progress_wheel" style="?android:progressBarStyleLarge" />
+        <android.support.v7.widget.RecyclerView android:id="@id/inbox_recycler_view" android:background="@color/intercom_full_transparent_full_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/compose_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercom_compose" style="@style/intercom_floating_action_button_style" />
+        <View android:background="@drawable/intercom_top_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_app_bar_shadow_height" />
+    </FrameLayout>
+</FrameLayout>

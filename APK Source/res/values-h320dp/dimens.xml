@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actprofile_topcolor_height_withouttoolbar">72.0dip</dimen>
+    <dimen name="pin_button_padv">6.0dip</dimen>
+</resources>

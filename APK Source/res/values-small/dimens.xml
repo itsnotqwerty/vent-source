@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="itmuserpic_large">72.0dip</dimen>
+    <dimen name="itmuserpic_large_negative_half">-36.0dip</dimen>
+</resources>

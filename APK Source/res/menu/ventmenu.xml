@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/reply" android:title="@string/Reply" app:showAsAction="always" />
+    <item android:id="@id/edit" android:title="@string/Edit" app:showAsAction="always" />
+    <item android:id="@id/delete" android:title="@string/Delete" app:showAsAction="always" />
+    <item android:id="@id/groupventdelete" android:title="@string/RemoveVent" app:showAsAction="always" />
+    <item android:id="@id/groupkick" android:title="@string/RemoveUserX" app:showAsAction="always" />
+    <item android:id="@id/report" android:title="@string/Report" app:showAsAction="always" />
+    <item android:id="@id/copy" android:title="@string/Copy" app:showAsAction="always" />
+</menu>

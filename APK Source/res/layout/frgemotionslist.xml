@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center_vertical" android:id="@id/scroll" android:fadingEdgeLength="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:requiresFadingEdge="vertical">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lock_block" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/emotions_locked" />
+        <TextView android:textColor="#ff000000" android:id="@id/lock_text" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/UnlockEmotions" />
+    </LinearLayout>
+</FrameLayout>

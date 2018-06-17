@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.intercom.android.sdk.views.IntercomErrorView android:gravity="center" android:id="@id/error_layout_conversation" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/intercom_grey_700" android:gravity="center" android:id="@id/empty_text_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intercom_failed_to_load_conversation" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/action_button" android:background="@color/intercom_full_transparent_full_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intercom_retry" android:layout_below="@id/empty_text_subtitle" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/intercom_error_state_title" android:gravity="center" android:id="@id/empty_text_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/intercom_inbox_error_state_title" android:layout_above="@id/empty_text_subtitle" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+</io.intercom.android.sdk.views.IntercomErrorView>

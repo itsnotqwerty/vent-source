@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vent.views.FixedSwipeRefreshLayout android:id="@id/swiperefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vent.views.FixedSwipeRefreshLayout>
+    <TextView android:textSize="16.0dip" android:textColor="#ffa8a8aa" android:gravity="center_horizontal" android:layout_gravity="center|top" android:id="@android:id/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginTop="100.0dip" android:layout_marginRight="32.0dip" />
+</FrameLayout>

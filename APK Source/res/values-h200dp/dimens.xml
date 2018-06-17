@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actprofile_topcolor_height_withouttoolbar">68.0dip</dimen>
+    <dimen name="itmuserpic_actvent">36.0dip</dimen>
+    <dimen name="onboardingblurbsmarginb">16.0dip</dimen>
+    <dimen name="onboardingblurbsmargint">8.0dip</dimen>
+    <dimen name="pad1">10.0dip</dimen>
+    <dimen name="pad2">6.0dip</dimen>
+    <dimen name="pin_button_padv">4.0dip</dimen>
+    <dimen name="tabLayout_height">40.0dip</dimen>
+</resources>

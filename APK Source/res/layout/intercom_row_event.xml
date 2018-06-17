@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/intercom_cell_horizontal_padding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/avatar" android:layout_width="@dimen/intercom_avatar_size" android:layout_height="@dimen/intercom_avatar_size" android:layout_marginRight="@dimen/intercom_conversation_row_icon_spacer" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/intercom_grey_400" android:layout_gravity="center_vertical" android:id="@id/event_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/intercom_conversation_row_margin" />
+</LinearLayout>

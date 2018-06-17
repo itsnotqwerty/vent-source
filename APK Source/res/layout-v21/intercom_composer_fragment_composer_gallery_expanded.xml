@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/gallery_root_view" android:fitsSystemWindows="@bool/intercom_composer_fits_system_windows" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/intercom_composer_transparent" android:fitsSystemWindows="@bool/intercom_composer_fits_system_windows" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/gallery_content_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/gallery_recycler_view" android:padding="4.0dip" android:fitsSystemWindows="@bool/intercom_composer_fits_system_windows" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:visibility="gone" android:fitsSystemWindows="@bool/intercom_composer_fits_system_windows" android:outlineProvider="bounds" layout="@layout/intercom_composer_loading_view" />
+        </FrameLayout>
+        <com.intercom.input.gallery.EmptyView android:id="@id/gallery_empty_view" android:background="@color/intercom_composer_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" app:intercom_composer_actionButtonText="@string/intercom_allow_access" app:intercom_composer_subtitleText="@string/intercom_allow_storage_access" app:intercom_composer_titleText="@string/intercom_photo_access_denied" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

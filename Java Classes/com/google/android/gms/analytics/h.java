@@ -1,0 +1,22 @@
+package com.google.android.gms.analytics;
+
+import com.google.android.gms.internal.cv;
+
+public final class h
+{
+  static String b(String paramString, int paramInt)
+  {
+    if (paramInt <= 0)
+    {
+      cv.i("index out of range for prefix", paramString);
+      return "";
+    }
+    return String.valueOf(paramString).length() + 11 + paramString + paramInt;
+  }
+}
+
+
+/* Location:              /home/qerwtr546/Documents/Vent Source/dex2jar-2.0/classes-dex2jar.jar!/com/google/android/gms/analytics/h.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

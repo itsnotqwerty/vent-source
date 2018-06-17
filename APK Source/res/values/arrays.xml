@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="atlas_time_days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="atlas_typing_indicator">
+        <item>No one is typing</item>
+        <item>%s is typing…</item>
+        <item>Two people are typing…</item>
+        <item>Three people are typing…</item>
+        <item>Many people are typing…</item>
+    </string-array>
+</resources>

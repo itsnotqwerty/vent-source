@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.layer.atlas.util.views.SwipeableItem android:background="@drawable/atlas_swipeable_item_background_selector" android:layout_width="fill_parent" android:layout_height="@dimen/atlas_primary_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/leavebehind" android:background="@color/atlas_item_leavebehind" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/atlas_primary_icon_size" android:layout_height="@dimen/atlas_primary_icon_size" android:layout_marginLeft="@dimen/atlas_padding_normal" android:src="@drawable/ic_delete_white_24dp" android:tint="@color/atlas_icon_enabled" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/swipeable" android:background="@drawable/atlas_swipeable_item_foreground_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.layer.atlas.AtlasAvatar android:id="@id/avatar" android:layout_width="@dimen/atlas_avatar_item_single" android:layout_height="@dimen/atlas_avatar_item_single" android:layout_margin="@dimen/atlas_padding_normal" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="bottom" android:background="@color/atlas_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingRight="@dimen/atlas_padding_normal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/atlas_text_size_primary_item_title" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="[title]" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/atlas_text_size_primary_item_metadata" android:textColor="@color/atlas_text_blue" android:layout_gravity="center_vertical" android:id="@id/time" android:paddingLeft="@dimen/atlas_padding_narrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[time]" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/atlas_text_size_primary_item_subtitle" android:id="@id/last_message" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="[last message]" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</com.layer.atlas.util.views.SwipeableItem>

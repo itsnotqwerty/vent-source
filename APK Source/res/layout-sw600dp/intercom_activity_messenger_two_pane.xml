@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/messenger_container" style="@style/intercom_toolbar_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/inbox_fragment" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/intercom_two_pane_inbox_percentage" />
+    <View android:background="@color/intercom_border_color" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/conversation_fragment" android:background="@color/intercom_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="@dimen/intercom_two_pane_conversation_percentage" />
+</LinearLayout>

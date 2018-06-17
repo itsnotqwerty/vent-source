@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lightbox_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <ImageView android:id="@id/lightbox_close_button" android:padding="16.0dip" android:layout_width="56.0dip" android:layout_height="66.0dip" app:srcCompat="@drawable/intercom_composer_close_icon" />
+        <android.support.v4.widget.Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/lightbox_send_button" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="66.0dip" app:srcCompat="@drawable/intercom_composer_send_icon" />
+    </LinearLayout>
+    <ImageView android:id="@id/lightbox_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/intercom_composer_lightbox_padding" android:scaleType="fitCenter" android:layout_weight="1.0" android:layout_marginStart="@dimen/intercom_composer_lightbox_padding" android:layout_marginEnd="@dimen/intercom_composer_lightbox_padding" />
+</LinearLayout>

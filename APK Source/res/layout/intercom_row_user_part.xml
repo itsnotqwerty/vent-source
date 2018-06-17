@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:paddingRight="@dimen/intercom_cell_horizontal_padding" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <io.intercom.android.sdk.views.ExpandableLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/intercom_bubble" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/cellLayout" android:background="@drawable/intercom_bubble_background" android:paddingLeft="@dimen/intercom_cell_horizontal_padding" android:paddingRight="@dimen/intercom_cell_horizontal_padding" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/intercom_conversation_row_margin" />
+        <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:intercomCanExpand="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/intercom_grey_500" android:ellipsize="end" android:id="@id/metadata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="4.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/intercom_grey_500" android:ellipsize="end" android:id="@id/attribution" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </io.intercom.android.sdk.views.ExpandableLayout>
+</LinearLayout>

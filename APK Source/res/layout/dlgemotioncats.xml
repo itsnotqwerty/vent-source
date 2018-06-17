@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="@dimen/switchuser_dlgwidth" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:background="@null" android:scrollbars="vertical" android:fadingEdgeLength="0.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0" android:requiresFadingEdge="vertical" />
+    <Button android:id="@id/export" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Export" />
+</LinearLayout>

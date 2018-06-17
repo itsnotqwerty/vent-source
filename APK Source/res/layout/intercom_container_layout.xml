@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercom_progress_wheel" style="?android:progressBarStyleLarge" />
+    <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:id="@id/cellLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/intercom_cell_content_padding" android:layout_marginRight="@dimen/intercom_cell_content_padding" />
+</FrameLayout>

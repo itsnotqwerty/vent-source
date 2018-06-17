@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="atlas_message_item_read_muliple_participants">
+        <item quantity="other">Read by %d participants</item>
+        <item quantity="one">Read by %d participant</item>
+    </plurals>
+</resources>

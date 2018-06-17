@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/atlas_message_composer_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/attachment" android:layout_width="@dimen/atlas_icon_button_size" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/atlas_icon_button_side_padding" android:layout_marginRight="@dimen/atlas_icon_button_side_padding" android:src="@drawable/ic_add_white_24dp" android:scaleType="center" style="?android:borderlessButtonStyle" />
+    <com.layer.atlas.MyEditText android:textSize="@dimen/atlas_text_size_input" android:layout_gravity="bottom" android:id="@id/message_edit_text" android:background="@drawable/atlas_edit_text_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/atlas_input_height" android:hint="@string/atlas_message_composer_hint" android:maxLines="3" android:layout_weight="1.0" android:textCursorDrawable="@drawable/atlas_edit_text_cursor" />
+    <Button android:textSize="@dimen/atlas_text_size_button" android:id="@id/send_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/atlas_icon_button_side_padding" android:layout_marginRight="@dimen/atlas_icon_button_side_padding" android:text="@string/atlas_message_composer_send_button" style="?android:borderlessButtonStyle" />
+</LinearLayout>

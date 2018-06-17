@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/incgradient" />
+    <android.support.v7.widget.Toolbar android:theme="@style/MyActionBar.Black.Forced" android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:layout_alignParentTop="true" />
+    <Button android:textSize="14.0dip" android:textColor="#ffffffff" android:id="@id/register" android:background="?selectableItemBackground" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/Register" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <Button android:textSize="14.0dip" android:textColor="#ffffffff" android:id="@id/signin" android:background="?selectableItemBackground" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/SignIn" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/title_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/register" android:layout_below="@id/toolbar">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_login" />
+        <TextView android:textSize="54.0dip" android:textColor="#ffffffff" android:id="@id/venttitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:text="V E N T" style="@style/Base.TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+    <EditText android:textColor="#ffffffff" android:id="@id/url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/register" android:inputType="textUri" />
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/server_radiogroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/url">
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="Server:" />
+        <RadioButton android:textColor="#ffffffff" android:id="@id/server_prod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="production" />
+        <RadioButton android:textColor="#ffffffff" android:id="@id/server_dev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="staging" />
+    </RadioGroup>
+</RelativeLayout>

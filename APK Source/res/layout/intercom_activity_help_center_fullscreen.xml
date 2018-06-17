@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/link_root" android:background="@drawable/intercom_post_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.intercom.android.sdk.views.IntercomToolbar android:id="@id/intercom_toolbar" style="@style/intercom_toolbar_style" />
+    <FrameLayout android:id="@id/link_view" android:background="@color/intercom_white" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercom_progress_wheel" style="?android:progressBarStyleLarge" />
+        <View android:background="@drawable/intercom_top_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_app_bar_shadow_height" />
+    </FrameLayout>
+</LinearLayout>

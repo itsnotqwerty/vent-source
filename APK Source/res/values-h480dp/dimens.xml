@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actprofile_topcolor_height_withouttoolbar">80.0dip</dimen>
+    <dimen name="itmuserpic_actvent">40.0dip</dimen>
+    <dimen name="onboardingblurbsmarginb">36.0dip</dimen>
+    <dimen name="onboardingblurbsmargint">24.0dip</dimen>
+</resources>

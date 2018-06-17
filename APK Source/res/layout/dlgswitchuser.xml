@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/dn_black_text" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/SwitchUser" />
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="@dimen/switchuser_listheight" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/newuser" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:minHeight="48.0dip">
+        <TextView android:textSize="24.0dip" android:textColor="@color/dn_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:includeFontPadding="false" style="@style/TextAppearance.AppCompat.Widget.Button" />
+        <TextView android:textColor="@color/dn_black_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/AddUser" style="@style/TextAppearance.AppCompat.Widget.Button" />
+    </LinearLayout>
+</LinearLayout>

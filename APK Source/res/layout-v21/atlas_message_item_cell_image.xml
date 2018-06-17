@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cell_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:transitionName="image_popup" />
+    <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@id/cell_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+</merge>

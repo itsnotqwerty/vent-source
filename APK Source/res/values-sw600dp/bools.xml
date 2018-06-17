@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="intercom_composer_keyboard_takes_full_screen_in_landscape">false</bool>
+    <bool name="intercom_is_two_pane">true</bool>
+</resources>

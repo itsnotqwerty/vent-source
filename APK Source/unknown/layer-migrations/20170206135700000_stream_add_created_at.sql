@@ -1,0 +1,1 @@
+ALTER TABLE streams ADD COLUMN created_at INTEGER;

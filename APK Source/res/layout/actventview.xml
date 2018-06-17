@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@color/dn_windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:theme="@style/MyActionBar.White" android:id="@id/toolbar" android:background="@color/dn_white2_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" />
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.vent.views.FixedSwipeRefreshLayout android:id="@id/swiperefresh" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.vent.views.FixedSwipeRefreshLayout>
+    <View android:id="@id/line1" android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/edit_bar" android:background="@color/dn_white2_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vent.views.MyMultiAutoCompleteTextView android:textSize="@dimen/ventbodyfont" android:id="@id/edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:maxLines="@integer/comment_edit_maxLines" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone|flagNoExtractUi" />
+        <ImageButton android:id="@id/send" android:background="@null" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/send_icon" android:contentDescription="@string/PostComment" />
+    </LinearLayout>
+</LinearLayout>

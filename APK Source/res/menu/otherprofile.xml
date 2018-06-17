@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/dn_ic_notifications_none_white_24dp" android:id="@id/subscribe" android:title="@string/Subscribe" app:showAsAction="always" />
+    <item android:icon="@drawable/dn_ic_notifications_active_white_24dp" android:id="@id/unsubscribe" android:title="@string/Unsubscribe" app:showAsAction="always" />
+    <item android:icon="@drawable/dn_icon_chat_add_white" android:id="@id/addchat" android:title="@string/Messages" app:showAsAction="always" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/count" android:background="@drawable/widget_count_badge" android:paddingLeft="5.0dip" android:paddingTop="1.5dip" android:paddingRight="5.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:layout_marginRight="-4.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_alignTop="@id/icon" android:layout_alignRight="@id/icon" style="@style/robotoLight" />
+</RelativeLayout>

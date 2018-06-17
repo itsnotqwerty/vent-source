@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="@color/dn_windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/dn_white2_background" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <android.support.design.widget.TextInputLayout android:id="@id/email_error" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+                <android.support.design.widget.TextInputEditText android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/CurrentEmail" android:inputType="textEmailAddress" android:imeOptions="actionDone|flagNoExtractUi" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:textColor="#ff00ff00" android:id="@id/emailconfirmed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/EmailConfirmed" />
+            <TextView android:textColor="#ffff0000" android:id="@id/emailnotconfirmed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/EmailNotConfirmed" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/IfYouChangeYourEmail" />
+            <LinearLayout android:orientation="vertical" android:id="@id/sendemail_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                <View android:background="@color/dn_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textColor="@color/dn_black_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="16.0dip" android:text="@string/IfYouHaveNotRecievedEmail" />
+                <TextView android:textColor="@color/dn_black_text" android:gravity="center_vertical" android:id="@id/sendemail" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:text="@string/SendConfirmationEmail" android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

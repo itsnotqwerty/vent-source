@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/incgradient" />
+    <com.vent.views.MyFragmentTabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:divider="@null" android:layout_weight="0.0" android:tabStripEnabled="false" />
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <FrameLayout android:id="@id/realtabcontent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.vent.views.MyFragmentTabHost>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@id/add" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/post_icon" android:contentDescription="@string/CreateVent" app:borderWidth="0.0dip" app:fabSize="auto" />
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@id/addChat" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/icon_chat_add_white" android:contentDescription="@string/CreateChat" app:borderWidth="0.0dip" app:fabSize="auto" />
+    <FrameLayout android:id="@id/helpescreen_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/helpescreen_bkgnd" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/blurb" android:background="@color/dn_black_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textColor="@color/dn_white_text" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/PostYourFirstVentTitle" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/x_icon_white" android:layout_alignParentRight="true" />
+            <TextView android:textColor="@color/dn_white_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/PostYourFirstVentBody" android:layout_below="@android:id/text1" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

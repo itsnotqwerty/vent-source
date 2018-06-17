@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:background="@color/dn_windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v7.widget.Toolbar android:theme="@style/MyActionBar.Black.Forced" android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" />
+</FrameLayout>

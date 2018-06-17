@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@style/MyActionBar.Black.Forced" android:id="@id/toolbar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <android.support.v7.widget.AppCompatTextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="0.0px" android:layout_height="?actionBarSize" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/HowAreYouFeeling" android:maxLines="1" android:minLines="1" android:layout_weight="1.0" app:autoSizeMaxTextSize="22.0dip" app:autoSizeMinTextSize="8.0dip" app:autoSizeTextType="uniform" style="@style/MyActionBarTitleText.White" />
+            <android.support.v7.widget.SearchView android:layout_gravity="center_vertical" android:id="@id/search" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:imeOptions="actionSearch|flagNoExtractUi" android:iconifiedByDefault="true" android:queryHint="@string/Search" style="@style/MyWhiteSearch" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@id/categories_box" android:background="#33000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:layout_gravity="center_vertical" android:background="#40000000" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="36.0dip" android:layout_marginRight="36.0dip" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/categories" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:progressDrawable="@android:color/transparent" android:thumb="@drawable/thumb" />
+    </FrameLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/categories_box" android:layout_below="@id/toolbar" />
+    <FrameLayout android:id="@id/seek_title_box" android:background="@drawable/tooltip_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/categories_box">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/seek_title" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/robotoLight" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="intercom_composer_fits_system_windows">true</bool>
+</resources>

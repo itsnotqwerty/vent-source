@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/link_root" android:background="@drawable/intercom_post_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/dismiss" android:background="?selectableItemBackground" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="56.0dip" android:src="@drawable/intercom_close" />
+    <FrameLayout android:orientation="vertical" android:id="@id/link_view" android:background="@drawable/intercom_conversation_card_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0">
+        <io.intercom.android.sdk.views.ContentAwareScrollView android:orientation="vertical" android:id="@id/scroll_view" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/link_container" android:paddingTop="28.0dip" android:paddingBottom="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                <TextView android:textSize="24.0sp" android:textColor="@color/intercom_main_blue" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/intercom_grey_500" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="24.0dip" android:lineSpacingExtra="4.0sp" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/avatar_view" android:layout_width="@dimen/intercom_avatar_size" android:layout_height="@dimen/intercom_avatar_size" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/intercom_grey_500" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/intercom_grey_500" android:id="@id/updated" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/intercom_grey_100" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="26.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="26.0dip" android:layout_marginBottom="24.0dip" />
+            </LinearLayout>
+        </io.intercom.android.sdk.views.ContentAwareScrollView>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/link_composer_container" android:background="@drawable/intercom_article_reaction_background" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_link_reaction_height">
+            <TextView android:textSize="14.0sp" android:textColor="@color/intercom_grey_500" android:gravity="center" android:id="@id/reaction_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/intercom_article_question" />
+            <io.intercom.android.sdk.conversation.ReactionInputView android:id="@id/reaction_input_view" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_composer_height" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="top" android:id="@id/link_title_bar" android:background="@drawable/intercom_article_title_bar_background" android:layout_width="fill_parent" android:layout_height="@dimen/intercom_toolbar_height" android:alpha="0.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/intercom_main_blue" android:ellipsize="end" android:gravity="center" android:id="@id/title_bar_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" android:alpha="0.0" />
+        </FrameLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercom_progress_wheel" style="?android:progressBarStyleLarge" />
+        <include android:visibility="gone" layout="@layout/intercom_error_article" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">54.999996%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="itmuserpic_large">128.0dip</dimen>
+    <dimen name="itmuserpic_large_negative_half">-64.0dip</dimen>
+    <dimen name="itmuserpic_medium">64.0dip</dimen>
+    <dimen name="itmuserpic_small">48.0dip</dimen>
+    <dimen name="switchuser_dlgwidth">400.0dip</dimen>
+    <dimen name="switchuser_listheight">300.0dip</dimen>
+</resources>

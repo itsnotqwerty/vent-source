@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS synced_changes_table_row_idx ON synced_changes(table_name, row_identifier);

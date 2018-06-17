@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.layer.atlas.util.views.SwipeableItem android:background="@drawable/atlas_swipeable_item_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/leavebehind" android:background="@color/atlas_item_leavebehind" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/atlas_primary_icon_size" android:layout_height="@dimen/atlas_primary_icon_size" android:layout_marginLeft="@dimen/atlas_padding_normal" android:src="@drawable/ic_delete_white_24dp" android:tint="@color/atlas_icon_enabled" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/swipeable" android:background="@drawable/atlas_swipeable_item_foreground_selector" android:paddingLeft="@dimen/atlas_padding_normal" android:paddingTop="@dimen/atlas_message_cluster_space" android:paddingRight="@dimen/atlas_padding_normal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/time_group" android:paddingTop="@dimen/atlas_message_item_time_group_padding_top" android:paddingBottom="@dimen/atlas_message_item_time_group_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/atlas_text_size_message_item_metadata" android:textStyle="bold" android:textColor="@color/atlas_text_gray" android:id="@id/time_group_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[day]" />
+            <TextView android:textSize="@dimen/atlas_text_size_message_item_metadata" android:textColor="@color/atlas_text_gray" android:id="@id/time_group_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[time]" />
+        </LinearLayout>
+        <Space android:id="@id/cluster_space" android:layout_width="fill_parent" android:layout_height="@dimen/atlas_message_cluster_space_gap" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <android.widget.Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/atlas_padding_normal" android:minWidth="@dimen/atlas_message_item_cell_min_width" android:minHeight="@dimen/atlas_message_item_cell_min_height" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/atlas_text_size_message_item_metadata" android:textColor="@color/atlas_text_gray" android:layout_gravity="right" android:id="@id/receipt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/atlas_message_item_receipt_margin" android:text="@string/atlas_message_item_delivered" />
+    </LinearLayout>
+</com.layer.atlas.util.views.SwipeableItem>

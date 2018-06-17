@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/swipeable" android:paddingLeft="@dimen/atlas_padding_normal" android:paddingTop="@dimen/atlas_message_cluster_space" android:paddingRight="@dimen/atlas_padding_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />
